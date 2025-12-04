@@ -56,6 +56,6 @@ MY-LIST2
 
 ;; Реалізація структури за варіантом 2
 CL-USER> (setq my-list2
-               (let ((shared (list 2 1)))
-                 (list (cons 'A shared) 'B shared 'C)))
+               (let ((x (list 2 1)))
+                 (list (cons 'A x) 'B x 'C)))
 ((A 2 1) B (2 1) C)
